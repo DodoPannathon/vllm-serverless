@@ -5,8 +5,8 @@ import asyncio
 import uuid
 
 # ── Load config from env vars ──────────────────────────────
-MODEL_NAME = os.environ.get("MODEL_NAME", "meta-llama/Llama-3.2-8B-Instruct")
-DTYPE = os.environ.get("DTYPE", "half")
+MODEL_NAME = os.environ.get("MODEL_NAME", "Qwen/Qwen3.5-9B")
+DTYPE = os.environ.get("DTYPE", "int4")
 MAX_MODEL_LEN = int(os.environ.get("MAX_MODEL_LEN", 4096))
 GPU_MEMORY_UTILIZATION = float(os.environ.get("GPU_MEMORY_UTILIZATION", 0.90))
 
